@@ -1,0 +1,16 @@
+﻿#Logo {
+    display: inline-block;
+    width: 80%;
+}
+
+#Gest {
+    width: auto;
+    margin-left: 5px;
+    float: left;
+}
+
+#Login {
+    background-image: url('Pictures/Concours-OFPPT.png');
+    /*background-color: #cccccc;*/
+    height: 166px;
+}

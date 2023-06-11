@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Gestion des stagiaires</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+        <header>
+            <div id="titre">
+                 <h3>Gestion des stagiaires</h3>
+            </div>
+           <nav>
+                <div id="Logo">
+                    <img src="Pictures/Ofppt.png" alt="Logo Ofppt" style="height: 86px; width: 91px" />
+                </div>
+                   
+               <img id:"Gest" src="Pictures/Gest.png" alt="Gestion Stagiaires" style="position: relative; left: 61px; font-family: 'Cascadia Mono'; line-height: normal; top: 1px; height: 82px; width: 111px;"    />
+               
+            </nav>
+            <nav>
+                <%--<asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal"></asp:Menu>--%>
+            </nav>
+            
+        </header>
+            </div>
+
+            <div id="barrelogin">
+            <asp:LoginName ID="LoginName1" runat="server" />
+            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+        </div>
+
+        <section id="Login">
+            <article>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+             </article>
+            
+            </section>
+    </form>
+</body>
+</html>
